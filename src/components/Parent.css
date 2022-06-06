@@ -1,0 +1,45 @@
+.parent,
+.child {
+  background-color: rgba(163, 163, 163, 0.4);
+  backdrop-filter: blur(3px);
+  width: fit-content;
+}
+
+.parent {
+  border-radius: 1rem;
+  margin: auto;
+  padding: 0.5rem 1rem;
+}
+.child {
+  border-radius: 0.5rem;
+  margin: auto;
+  padding: 0.5rem 5rem;
+}
+
+.parent .fruits {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 1rem;
+  width: fit-content;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+h3 {
+  margin: 0;
+  text-align: left;
+}
+
+.parent .fruit {
+  user-select: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: rgba(53, 53, 53, 0.7);
+}
+.parent .fruit:hover:not(.selected) {
+  background-color: rgba(175, 175, 175, 0.7);
+}
+.parent .fruit.selected {
+  background-color: rgb(218, 218, 218, 0.8);
+}
